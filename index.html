@@ -15,6 +15,7 @@ body {
     height: 100%;
     background: #f1f1f1;
     display: flex;
+flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -61,12 +62,14 @@ p {
     }
   }
 
-  setTimeout(function(){queryForm();}, 3000);
+  setTimeout(function(){queryForm();
 
-var user = document.getElementsByName("user").value
+var user = document.getElementsByName("user")[0].value
 var usersrc = "https://internal-cdn.amazon.com/badgephotos.amazon.com/?uid=" + user
 document.getElementById("badgephoto").src=usersrc
-document.getElementById("msgbox").innerText = document.getElementsByName("msg").value
+document.getElementById("msgbox").innerText = document.getElementsByName("msg")[0].value}, 3000);
+
+
 
 
 
