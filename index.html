@@ -63,10 +63,10 @@ p {
 
   setTimeout(function(){queryForm();}, 3000);
 
-var user = document.getElementByName("user").value
+var user = document.getElementsByName("user").value
 var usersrc = "https://internal-cdn.amazon.com/badgephotos.amazon.com/?uid=" + user
 document.getElementById("imageid").src=usersrc
-document.getElementById("msgbox").innerText = document.getElementByName("msg").value
+document.getElementById("msgbox").innerText = document.getElementsByName("msg").value
 
 
 
